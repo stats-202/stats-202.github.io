@@ -1,0 +1,52 @@
+# HW1 release
+
+This release contains the R and python template to use in completing HW1.
+Please refer to either the 'R' or 'python' sub-directories corresponding to
+the language that you would like to complete the assignment in.
+
+Note that the autograder will evaluate the code for BOTH languages, irrespective
+of which language you complete the assignment in. Subseqently, the max of the
+two scores will be used as your score.
+
+
+## Python
+
+The autograder will be running under Python 3.6. To complete the assignment
+under the python programming language, refer to the files under the `python`
+subdirectory. You will need to update the files under `python/questions`.
+
+To install requirements:
+
+  pip3 install --user -r requirements.txt
+
+To run:
+
+	python3 main.py
+
+
+## R
+
+The autograder will be running under R v. To complete the assignment
+under the R programming language, refer to the files under the `R`
+subdirectory. You will need to update the files under `R/questions`.
+
+To install requirements:
+
+  while read -r package;
+  do
+    Rscript -e "install.packages('"$package"', repos='"https://ftp.osuosl.org/pub/cran/"')";
+  done < "requirements.txt"
+
+To run:
+
+  Rscript main.R
+
+
+## Submission
+
+To generate the .zip file for submission, run
+
+  bash make_submission.sh
+
+This compresses the python, R, and results folders into a zip file that you
+can subsequently upload to gradescope.

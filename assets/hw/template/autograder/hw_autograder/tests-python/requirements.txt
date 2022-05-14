@@ -1,0 +1,9 @@
+gradescope-utils>=0.2.7
+subprocess32
+absl-py
+matplotlib
+numpy
+pandas
+scipy
+sklearn
+statsmodels
