@@ -1,3 +1,0 @@
-RJSONIO
-logging
-testthat
